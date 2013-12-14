@@ -39,8 +39,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "interface/mmal/util/mmal_default_components.h"
 #include "RaspiCamControl.h"
 
-static const int metering_mode_map_size = sizeof(metering_mode_map)/sizeof(metering_mode_map[0]);
-
 #define CommandSharpness   0
 #define CommandContrast    1
 #define CommandBrightness  2

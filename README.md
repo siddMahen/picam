@@ -6,3 +6,7 @@ video.
 ## Dependencies
 
   - raspberrypi/userland
+
+## Links
+
+CC -L/path/to/libpicam.a -I

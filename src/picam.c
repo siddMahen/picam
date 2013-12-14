@@ -22,7 +22,7 @@
 #include "interface/mmal/util/mmal_connection.h"
 
 #include "RaspiCamControl.h"
-#include "Imaging.h"
+//#include "Imaging.h"
 #include <semaphore.h>
 
 /// Camera number to use - we only have one camera, indexed from 0.
