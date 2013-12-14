@@ -1,9 +1,8 @@
 #ifndef _PICAM_H
 #define _PICAM_H
 
-#include <Python.h>
 #include "interface/mmal/mmal.h"
-typedef struct {      
+typedef struct {
     int exposure;
     int meterMode;
     int imageFX;
@@ -28,7 +27,7 @@ typedef struct {
 
 uint8_t *takePhoto(PicamParams *parms, long *sizeread);
 uint8_t *takePhotoWithDetails(int width, int height, int quality, PicamParams *parms, long *sizeread);
-uint8_t *takeRGBPhotoWithDetails(int width, int height, PicamParams *parms,long *sizeread); 
-uint8_t *internelPhotoWithDetails(int width, int height, int quality,MMAL_FOURCC_T encoding,PicamParams *parms, long *sizeread); 
-void internelVideoWithDetails(char *filename, int width, int height, int duration, PicamParams *parms); 
+uint8_t *takeRGBPhotoWithDetails(int width, int height, PicamParams *parms,long *sizeread);
+uint8_t *internelPhotoWithDetails(int width, int height, int quality,MMAL_FOURCC_T encoding,PicamParams *parms, long *sizeread);
+void internelVideoWithDetails(char *filename, int width, int height, int duration, PicamParams *parms);
 #endif // _PICAM_H
