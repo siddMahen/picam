@@ -14,7 +14,11 @@ clean:
 	rm -f *.o libpicam.a
 
 install:
-	cp ./src/picam.h /usr/local/picam.h
+	cp ./src/picam.h /usr/local/include/picam.h
+	cp ./include/interface/vcos/pthreads/* /usr/local/include/
+	cp ./include/interface/vmcs_host/linux/*.h /usr/local/include/
+	cp -R ./include/interface /usr/local/include/interface
+	cp  /opt/vc/lib/* /usr/local/lib/
 	cp ./libpicam.a /usr/local/lib/libpicam.a
 	 
 
