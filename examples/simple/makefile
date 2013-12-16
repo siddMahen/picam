@@ -1,8 +1,11 @@
 PHONY: all
 
 all:
-	clang main.c -o simple -lm -lpicam -lmmal -lvcos -lbcm_host
+	clang main.c -o picture -lm -lpicam -lmmal -lvcos -lbcm_host
 
 clean:
-	rm simple
+	rm picture
 	rm img.jpeg
+
+install:
+	cp ./picture /usr/local/bin
